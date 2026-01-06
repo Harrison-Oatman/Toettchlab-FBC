@@ -1,0 +1,16 @@
+[project]
+name = "toettchlab-fbc"
+version = "0.1.0"
+description = "toettchlab feedback control"
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = [
+    "pyclm",
+    "tifffile",
+    "scikit-image"
+]
+
+[tool.uv.sources]
+
+pyclm = { git = "https://github.com/Harrison-Oatman/PyCLM.git", branch = "main" }
