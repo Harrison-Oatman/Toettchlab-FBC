@@ -13,5 +13,4 @@ dependencies = [
 ]
 
 [tool.uv.sources]
-
-pyclm = { git = "https://github.com/Harrison-Oatman/PyCLM.git", branch = "main" }
+pyclm = { path = "../FeedbackControl", editable = true }
