@@ -1,4 +1,4 @@
-from pyclm import run_pyclm, PatternMethod, SegmentationMethod
+from pyclm import run_pyclm, PatternMethod, SegmentationMethod, PFSPositionMover
 import numpy as np
 from pyclm.core.experiments import Experiment
 from pyclm.core.patterns import AcquiredImageRequest, DataDock, PatternContext
@@ -214,7 +214,7 @@ def main():
     pattern_methods = {"game_of_life": GameOfLife}
     segmentation_methods = {"segment_game_of_life": SegmentGameOfLife}
 
-    run_pyclm(BASE_PATH, pattern_methods=pattern_methods, segmentation_methods=segmentation_methods)
+    run_pyclm(BASE_PATH, pattern_methods=pattern_methods, segmentation_methods=segmentation_methods, position_mover=PFSPositionMover(), gui=True)
 
 if __name__ == "__main__":
     main()
