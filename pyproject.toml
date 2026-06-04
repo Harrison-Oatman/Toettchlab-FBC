@@ -6,12 +6,14 @@ readme = "README.md"
 requires-python = ">=3.11"
 
 dependencies = [
-    "pyclm",
+    "pyclm[cellpose]",
     "tifffile",
     "scikit-image",
     "matplotlib",
     "laptrack>=0.17.0",
     "seaborn>=0.13.2",
+    "pycromanager",
+    "statannotations>=0.7.2",
 ]
 
 [tool.uv.sources]

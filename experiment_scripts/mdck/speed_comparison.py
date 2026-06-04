@@ -2,7 +2,7 @@ from pathlib import Path
 
 from pyclm import run_pyclm
 
-DIR_PATH = Path(r"E:\Harrison\mdck_revision_experiments\20260207_speeds_0-075b")
+DIR_PATH = Path(r"E:\Harrison\mdck_revision_experiments\20260218_fbc_density")
 
 def main():
     run_pyclm(DIR_PATH)
